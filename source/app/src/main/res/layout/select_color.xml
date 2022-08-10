@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="100dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите цвет"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/YellowBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/note_yellow"
+            android:textColor="@color/note_yellow"
+            android:forceDarkAllowed="false"/>
+
+        <Button
+            android:id="@+id/GreenBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/note_green"
+            android:forceDarkAllowed="false"/>
+
+        <Button
+            android:id="@+id/BlueBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/note_blue"
+            android:forceDarkAllowed="false"/>
+
+        <Button
+            android:id="@+id/RedBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/note_red"
+            android:forceDarkAllowed="false"/>
+    </TableRow>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/note_yellow"
+    android:orientation="vertical"
+    tools:context=".EditNoteActivity"
+    android:forceDarkAllowed="false">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#16000000"
+        android:clipToPadding="false"
+        android:elevation="50dp"
+        android:forceDarkAllowed="false"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Theme"
+            style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:forceDarkAllowed="false"
+            android:hint="Тема заметки"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColorHint="#000000" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:forceDarkAllowed="false"/>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|right"
+        android:gravity="bottom"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/SelectColorBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/colorbtn"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground" />
+
+        <Button
+            android:id="@+id/DeleteBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/deletebtn"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground" />
+    </TableRow>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/NotesList"
+        style="@android:style/Widget.Material.GridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:numColumns="2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:verticalSpacing="10dp"
+        android:visibility="gone" >
+
+    </GridView>
+
+
+    <TextView
+        android:id="@+id/UserNotify"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Добавьте первую заметку!"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/NewNote"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:width="70dp"
+        android:height="70dp"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:maxWidth="0dp"
+        android:maxHeight="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:rotationX="0"
+        android:text="+"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorLink="#FFEB3B"
+        android:textSize="34sp"
+        app:rippleColor="#FFEB3B"
+        tools:ignore="RtlCompat,RtlHardcoded"
+        android:elevation="15dp"/>
+</FrameLayout>
